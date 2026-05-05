@@ -133,7 +133,8 @@ if (!product) {
 // Display product
     document.getElementById("productImage").src = product.image;
     document.getElementById("productName").innerText = product.name;
-    document.getElementById("productPrice").innerText = "" + product.price.toLocaleString();
+    document.getElementById("productPrice").innerText = 
+    "₱" + product.price.toLocaleString();
     document.getElementById("productDescription").innerText = product.description;
 
 function buyNow() {
