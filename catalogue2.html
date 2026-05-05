@@ -130,7 +130,7 @@ products.forEach((product, index) => {
         <div class="product">
             <img src="${product.image}">
             <h3>${product.name}</h3>
-            <p class="price">${product.price}</p>
+            <p class="price">₱${product.price.toLocaleString()}</p>
             <p>${product.description}</p>
             <button onclick="viewDetails(${index})">View Details</button>
         </div>
